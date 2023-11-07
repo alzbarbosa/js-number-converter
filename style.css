@@ -1,0 +1,15 @@
+/* Avoid overflow in the bottom*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Fixed width for buttons */
+.custom-btn {
+  width: 125px;
+}
