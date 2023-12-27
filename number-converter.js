@@ -63,6 +63,7 @@ function romanToDecimal(roman) {
   return num;
 }
 
+// convert a decimal number to binary number
 function decimalToBinary(number) {
   let binary = "";
 
@@ -74,6 +75,7 @@ function decimalToBinary(number) {
   return binary;
 }
 
+// convert a binary number to decimal number
 function binaryToDecimal(numberString) {
   let resultDecimalNumber = 0;
 
@@ -85,12 +87,13 @@ function binaryToDecimal(numberString) {
   return resultDecimalNumber;
 }
 
+// Clear previous results and errors
 function clearMessages() {
-  // Clear previous results and errors
   errorElement.textContent = "";
   outputElement.textContent = "";
 }
 
+// Clear previous results and errors
 function updateInputInfo(type, message) {
   inputElement.type = type;
   inputElement.placeholder = message;
