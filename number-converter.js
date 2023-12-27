@@ -93,12 +93,13 @@ function clearMessages() {
   outputElement.textContent = "";
 }
 
-// Clear previous results and errors
+// Input the type of the converter and the message in the input box
 function updateInputInfo(type, message) {
   inputElement.type = type;
   inputElement.placeholder = message;
 }
 
+// Do the change from one type of converter to another
 function changeConverter(conversionType) {
   const conversionMap = {
     romanToDecimal: ["text", "Enter Roman Numeral..."],
